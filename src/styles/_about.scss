@@ -1,0 +1,34 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px;
+
+  .address {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr;
+    background-color: black;
+  }
+
+  .social {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 40px);
+    background-color: #EBB120;
+  }
+
+}
+
+.about-additional-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .foto {
+
+  }
+
+  .desc {
+    background-image: url("assets/img/bg_4.jpg");
+  }
+
+}

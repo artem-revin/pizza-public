@@ -1,0 +1,32 @@
+.service {
+  background-image: url("assets/img/food.png");
+  color: black;
+
+  .service-header {
+    text-align: center;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: space-evenly;
+    justify-items: center;
+
+    .section {
+      display: grid;
+      justify-items: center;
+
+      .image {
+        border: 1px solid black;
+        width: 60px;
+        height: 60px;
+      }
+
+      div {
+        width: 300px;
+      }
+
+    }
+  }
+
+}
