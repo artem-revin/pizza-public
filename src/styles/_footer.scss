@@ -1,0 +1,57 @@
+$blog-text: #6b6a6a;
+
+
+
+.blog {
+  background-image: url('assets/img/bg_4.jpg');
+  width: 1520px;
+  height: 720px;
+}
+
+.blog-inf h2 {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.blog p {
+  font-size: 14px;
+  color: $blog-text;
+}
+
+
+
+.blog-eat {
+  width: 350 px;
+}
+
+
+.blog-eat span {
+  font-size: 10px;
+
+}
+
+.blog-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1100px;
+  height: 400px;
+  margin: auto;
+  text-align: left;
+  margin-top: 55px;
+}
+
+.blog-eat {
+  width: 340px;
+}
+
+.eat-menu {
+  width: 320px;
+  height: 220px;
+}
+
+.min-comm img {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px 0 12px;
+}
