@@ -1,5 +1,5 @@
 $blog-text: #6b6a6a;
-
+$btn-color: #EBB120;
 
 
 .blog {
@@ -21,7 +21,7 @@ $blog-text: #6b6a6a;
 
 
 .blog-eat {
-  width: 350 px;
+  width: 350px;
 }
 
 
@@ -54,4 +54,62 @@ $blog-text: #6b6a6a;
   width: 12px;
   height: 12px;
   margin: 0 6px 0 12px;
+}
+
+.footer-position {
+  width: 1520px;
+  height: 500px;
+  display: flex;
+}
+
+.map-position {
+  width: 50%;
+  height: 100%;
+}
+
+.map-position iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  margin-top: 3%;
+  margin-left: 6%;
+}
+
+.form form {
+  background: $background-color; /* Цвет фона */
+  width: 480px; /* Ширина формы */
+  //margin: auto; /* Выравниваем по центру */
+  padding: 20px; /* Поля вокруг текста */
+}
+.form input {
+  width: 100%; /* Ширина поля */
+  //box-sizing: border-box; /* Ширина не учитывает padding */
+  margin: 10px 0; /* Отступы сверху и снизу */
+  padding: 12px 0; /* Поля вокруг текста */
+  border: none; /* Убираем рамку */
+  border-bottom: 1px solid #ccc; /* Линия снизу */
+  background: transparent; /* Прозрачный фон */
+  color: #ffffff;
+}
+.form input:focus {
+  outline: none; /* Убираем контур */
+  border-bottom: 2px solid $btn-color; /* Синяя линия снизу */
+}
+.form input::placeholder {
+  transition: 0.5s; /* Время трансформации */
+  color: #ffffff; /* Цвет подсказки */
+}
+.form input:focus::placeholder {
+  font-size: 10px; /* Размер шрифта */
+  transform: translateY(-16px); /* Сдвигаем вверх */
+}
+
+.form input:last-of-type {
+  border: 1px solid $btn-color;
+  background-color: $btn-color;
+  width: 100px;
+  height: 50px;
+  margin-right: 400px;
 }
