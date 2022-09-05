@@ -116,6 +116,94 @@ $btn-color: #EBB120;
 
 .info-about {
   display: flex;
-
+  flex-direction: row;
+  justify-content: space-around;
+  //font-size: 9px;
 }
 
+.recent-blog {
+  display: flex;
+  font-size: 10px;
+}
+
+.question{
+  font-size: 14px;
+  width: 250px;
+  //height: px;
+}
+
+.question div {
+  display: flex;
+  margin-top: 15px;
+  }
+
+.question img {
+  width: 20px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.question p {
+  margin: 0;
+}
+
+.about-us p{
+  text-align: left;
+  width: 250px;
+}
+
+.social-networks {
+  text-align: left;
+  margin-top: 150px;
+}
+
+.res-blog {
+  width: 450px;
+}
+
+.box-info {
+  display: flex;
+}
+
+.box-info p {
+  font-size: 9px;
+}
+.box-info img {
+  width: 10px;
+  height: 10px;
+  margin: auto 5px;
+}
+
+.res-inf p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.copyright p{
+  margin-top: 100px;
+}
+
+.recent-blog {
+  margin-top: 30px;
+}
+
+.food {
+  margin-top: 120px;
+}
+
+.info-about {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+.services h3{
+  margin-bottom: 30px;
+}
+
+.res-inf p {
+  margin-top: 0;
+}
+
+.res-box {
+  margin-left: 20px;
+}
