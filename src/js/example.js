@@ -78,8 +78,14 @@ function createNewSlide(slide) {
     switch (init) {
         case "swipe1" : {
             header.innerText = "Delicious";
+            header.classList.add("head");
+            containerHeader.classList.add("wood-item");
             name.innerText = "Italian Cuizine";
+            name.classList.add("head2");
+            containerName.classList.add("wood-item");
             desc.innerText = "A small river named Duden flows by their place and supplies it with the necessary regelialia";
+            desc.classList.add("head3");
+            containerDesc.classList.add("wood-item");
             firstBName.innerText = "Order Now";
             secondBName.innerText = "View Menu";
             containerButtons.classList.add("main-container-wood-buttons");
@@ -100,8 +106,14 @@ function createNewSlide(slide) {
 
         case "swipe2" : {
             header.innerText = "Crunchy";
+            header.classList.add("head");
+            containerHeader.classList.add("wood-item");
             name.innerText = "Italian Pizza";
+            name.classList.add("head2");
+            containerName.classList.add("wood-item");
             desc.innerText = "A small river named Duden flows by their place and supplies it with the necessary regelialia";
+            desc.classList.add("head3");
+            containerDesc.classList.add("wood-item");
             firstBName.innerText = "Order Now";
             secondBName.innerText = "View Menu";
             containerButtons.classList.add("main-container-wood-buttons");
@@ -122,8 +134,11 @@ function createNewSlide(slide) {
 
         case "swipe3" : {
             header.innerText = "Welcome";
+            header.classList.add("head");
             name.innerText = "We cooked your desired pizza recipe";
+            name.classList.add("head2");
             desc.innerText = "A small river named Duden flows by their place and supplies it with the necessary regelialia";
+            desc.classList.add("head3");
             firstBName.innerText = "Order Now";
             secondBName.innerText = "View Menu";
             containerButtons.classList.add("main-container-wood-buttons");

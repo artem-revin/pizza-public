@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Koulen&family=Smooch&display=swap');
+
 .about-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -29,6 +31,18 @@
 
   .desc {
     background-image: url("assets/img/bg_4.jpg");
+
+    .desc-welcome {
+      font-family: 'Grape Nuts', cursive;
+      font-size: 30px;
+      color: white;
+    }
+
+    p {
+      font-size: 13px;
+      color: #6b6a6a;
+    }
+
   }
 
 }
