@@ -1,20 +1,36 @@
+// Section order
+
 .order{
-    background-image: url("assets/img/bg_4.jpg");
+  background-image: url("assets/img/bg_4.jpg");
+  height: 750px;
+  width: auto;
 }
 
 .order__icons{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 0px;
 }
+
+.order__img{
+  margin: -2px;
+  width: 245px;
+}
+
 
 .order__img img{
   width: 240px;
-  height: 230px;   
+  height: 230px;
 }
 
-.order__header h2 {
-  padding: 30px 0px 10px 0px;
+
+.order__header{
+  margin-top: -18px;
+}
+.order__header h1 {
+  padding: 70px 0px 10px 0px;
+  margin-top: 0px;
 }
 
 .order__header p{
@@ -29,7 +45,7 @@
 }
 
 .order__text h3{
-  font-size: 17px; 
+  font-size: 17px;
 }
 
 .order__text p{
@@ -42,9 +58,90 @@
 }
 
 .btn{
-margin-left: 10px;
-background-color: black;
-border: 1px solid #fff;
-padding: 5px 10px 5px 10px;
-color: #fff;
+  margin-left: 10px;
+  background-color: black;
+  border: 1px solid #fff;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+}
+
+
+// Section menu
+
+.menu{
+  background-image: url("assets/img/bg_4.jpg");
+  height: 800px;
+  width: auto;
+}
+
+.menu__list{
+  display: flex;
+}
+
+
+.menu__left{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 700px;
+  margin-left: 150px;
+}
+
+.menu__right{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  align-items: stretch;
+  margin-right: 150px;
+
+}
+
+.menu__header h2{
+  padding: 100px 0px 10px 0px;
+  margin-top: 0px;
+}
+
+.menu__header p{
+  color: #6c6c6c;
+  font-size: 15px;
+  padding-bottom: 80px;
+}
+
+.menu__img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin: 10px;
+}
+
+
+
+.main__text{
+  margin: 20px 0px -10px 0px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+
+.menu__text{
+  color: #6c6c6c;
+  font-size: 15px;
+  text-align: left;
+}
+
+.price{
+  color: #eebc60;
+  margin-left: 15px;
+}
+
+.desh{
+  color: #be7e06;
+  margin-left: 10px;
+}
+
+.desh1{
+  margin-left: 0px;
+  color: #be7e06;
 }
