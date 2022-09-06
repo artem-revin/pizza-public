@@ -121,9 +121,6 @@ function createNewSlide(slide) {
 
             let slidePlace = document.querySelector("#main");
             slidePlace.replaceWith(container);
-
-
-
             break;
         }
 
