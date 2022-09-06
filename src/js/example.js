@@ -31,11 +31,31 @@ let firstSlide = document.querySelector("#swipe1");
 let secondSlide = document.querySelector("#swipe2");
 let thirdSlide = document.querySelector("#swipe3");
 
+window.onload = function () {
+    firstSlide.children[0].style.display = "block";
+};
+
 /*console.log(firstSlide);*/
 
-firstSlide.addEventListener("click", (e) => createNewSlide(e.target));
-secondSlide.addEventListener("click", (e) => createNewSlide(e.target));
-thirdSlide.addEventListener("click", (e) => createNewSlide(e.target));
+firstSlide.addEventListener("click", (e) =>
+{
+    createNewSlide(e.target);
+    firstSlide.children[0].style.display = "block";
+    secondSlide.children[0].style.display = "none";
+    thirdSlide.children[0].style.display = "none";
+});
+secondSlide.addEventListener("click", (e) => {
+    createNewSlide(e.target);
+    firstSlide.children[0].style.display = "none";
+    secondSlide.children[0].style.display = "block";
+    thirdSlide.children[0].style.display = "none";
+});
+thirdSlide.addEventListener("click", (e) => {
+    createNewSlide(e.target);
+    firstSlide.children[0].style.display = "none";
+    secondSlide.children[0].style.display = "none";
+    thirdSlide.children[0].style.display = "block";
+});
 
 function createNewSlide(slide) {
     /*let forDel = document.querySelector("#main");
@@ -83,7 +103,7 @@ function createNewSlide(slide) {
             name.innerText = "Italian Cuizine";
             name.classList.add("head2");
             containerName.classList.add("wood-item");
-            desc.innerText = "A small river named Duden flows by their place and supplies it with the necessary regelialia";
+            desc.innerText = "A small river named Duden flows by their place and supplies it with the necessary regelialia.";
             desc.classList.add("head3");
             containerDesc.classList.add("wood-item");
             firstBName.innerText = "Order Now";
@@ -101,6 +121,9 @@ function createNewSlide(slide) {
 
             let slidePlace = document.querySelector("#main");
             slidePlace.replaceWith(container);
+
+
+
             break;
         }
 
