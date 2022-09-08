@@ -1,29 +1,36 @@
 // Section order
 
 .order{
+  
   background-image: url("assets/img/bg_4.jpg");
   height: 750px;
-  width: auto;
+  width: 1520px;
+  
+  
 }
 
 .order__icons{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  margin-bottom: 0px;
+  grid-template-columns: minmax(240px, auto) repeat( 5, 1fr);
+  grid-template-rows: minmax(230, auto);
+  justify-items: center;
+  max-width: 1520px;
+  height: 230px;
+  margin: 0;
+
+
 }
 
 .order__img{
-  margin: -2px;
-  width: 245px;
+  display: grid;
+  margin: -5px;
+  
 }
-
 
 .order__img img{
-  width: 240px;
+  width: 255px;
   height: 230px;
 }
-
 
 .order__header{
   margin-top: -18px;
@@ -40,21 +47,26 @@
 }
 
 .order__text{
+
   text-align: left;
-  padding: 15px;
+  width: 240px;
+  height: 230px;
 }
 
 .order__text h3{
   font-size: 17px;
+  padding-left: 15px;
 }
 
 .order__text p{
   color: #6c6c6c;
   font-size: 14px;
+  padding: 0px 10px 25px 15px;
 }
 
 .order__text span{
   color: #eebc60;
+  padding-left: 15px;
 }
 
 .btn{
@@ -63,19 +75,29 @@
   border: 1px solid #fff;
   padding: 5px 10px 5px 10px;
   color: #fff;
+  padding-left: 15px;
+  width: 60px;
+  height: 30px;
+
 }
 
+.btn:hover{
+  background-color: #eebc60;
+  color: black;
+}
 
 // Section menu
 
 .menu{
   background-image: url("assets/img/bg_4.jpg");
   height: 800px;
-  width: auto;
+  width: 1520px;
 }
 
 .menu__list{
   display: flex;
+  justify-content: center;
+  padding-left: 0px;
 }
 
 
@@ -83,17 +105,14 @@
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  width: 700px;
-  margin-left: 150px;
+  width: 570px;
 }
 
 .menu__right{
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 570px;
   align-items: stretch;
-  margin-right: 150px;
-
 }
 
 .menu__header h2{
@@ -105,6 +124,12 @@
   color: #6c6c6c;
   font-size: 15px;
   padding-bottom: 80px;
+}
+
+svg{
+  width: 580px;
+  height: 200px;
+  margin-top: -180px;
 }
 
 .menu__img{
@@ -122,6 +147,7 @@
   margin: 20px 0px -10px 0px;
   text-align: left;
   margin-left: 20px;
+ 
 }
 
 
@@ -129,6 +155,7 @@
   color: #6c6c6c;
   font-size: 15px;
   text-align: left;
+  
 }
 
 .price{
