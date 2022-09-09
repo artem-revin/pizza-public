@@ -26,16 +26,41 @@ const swiper = new Swiper('.swiper', {
     },
 });*/
 
-
 let firstSlide = document.querySelector("#swipe1");
 let secondSlide = document.querySelector("#swipe2");
 let thirdSlide = document.querySelector("#swipe3");
 
+window.onload = function () {
+    firstSlide.children[0].style.display = "block";
+};
+
 /*console.log(firstSlide);*/
 
-firstSlide.addEventListener("click", (e) => createNewSlide(e.target));
+firstSlide.addEventListener("click", (e) =>
+{
+    createNewSlide(e.target);
+    firstSlide.children[0].style.display = "block";
+    secondSlide.children[0].style.display = "none";
+    thirdSlide.children[0].style.display = "none";
+});
+secondSlide.addEventListener("click", (e) => {
+    createNewSlide(e.target);
+    firstSlide.children[0].style.display = "none";
+    secondSlide.children[0].style.display = "block";
+    thirdSlide.children[0].style.display = "none";
+});
+thirdSlide.addEventListener("click", (e) => {
+    createNewSlide(e.target);
+    firstSlide.children[0].style.display = "none";
+    secondSlide.children[0].style.display = "none";
+    thirdSlide.children[0].style.display = "block";
+});
+
+/*console.log(firstSlide);*/
+
+/*firstSlide.addEventListener("click", (e) => createNewSlide(e.target));
 secondSlide.addEventListener("click", (e) => createNewSlide(e.target));
-thirdSlide.addEventListener("click", (e) => createNewSlide(e.target));
+thirdSlide.addEventListener("click", (e) => createNewSlide(e.target));*/
 
 function createNewSlide(slide) {
     /*let forDel = document.querySelector("#main");
