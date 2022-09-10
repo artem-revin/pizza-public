@@ -21,7 +21,6 @@
  .yellow-box-down img {
    width: 1520px;
    height: 662px;
-
  }
 
  .yellow-box-down {
@@ -63,3 +62,84 @@
  .yellow-box-down-glass p {
    color: #bebebe;
  }
+
+ .pizza-title {
+   background: url('assets/img/bg_4.jpg');
+   display: flex;
+   width: 1520px;
+   height: 650px;
+ }
+
+ .pizza-img img {
+   width: 350px;
+   height: 550px;
+ }
+
+ .pizza-img {
+   text-align: left;
+ }
+
+ .navigation-pizza {
+   display: flex;
+   justify-content: space-between;
+   width: 390px;
+   height: 35px;
+ }
+
+.navigation-button {
+  border: 1px solid orange;
+  padding: 6px 16px;
+}
+
+ .navigation-button:hover{
+   background: orange;
+   border: 1px solid orange;
+ }
+
+ .navigation-button p {
+   margin: auto;
+ }
+
+ .pizza-navigation-wrapper {
+   margin: 40px 0 0 50px;
+ }
+
+ .pizza-wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 1100px;
+ }
+
+ .pizza-wrap img {
+   width: 190px;
+   height: 190px;
+   margin-top: 35px;
+ }
+
+ .pizza-wrap span {
+   border: 1px solid white;
+   padding: 5px 10px;
+   font-size: 14px;
+ }
+
+ .pizza-wrap span:hover {
+   border: 1px solid orange;
+   background: orange;
+ }
+
+ .pizza-wrap p:nth-child(odd) {
+   font-size: 14px;
+   color: #6b6a6a;
+   width: 290px;
+ }
+
+ .pizza-wrap p:nth-child(even) {
+   color: orange;
+ }
+
+ .pizza-wrap h3 {
+   font-size: 25px;
+ }
+
+
+
